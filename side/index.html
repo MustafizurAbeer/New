@@ -845,7 +845,6 @@
 
 
 
-
 <!--
 	
 <!DOCTYPE html>
@@ -854,6 +853,7 @@
 	<meta charset="utf-8">
 	<title>CSS-L1</title>
 	<link rel="stylesheet" href="style.css">
+
 <style>
 	/*Week 2 Lecture 16: Style Placement*/
 	p{
@@ -869,6 +869,7 @@
    } 
 
 </style>
+
 </head>
 <body>
 <h1>Anatomy of CSS</h1>	
@@ -886,7 +887,6 @@
 </html>
 
 -->
-
 
 
 
@@ -1196,7 +1196,7 @@
 
 
 
-
+<!--
 </html>
 <!doctype html>
 <html>
@@ -1204,22 +1204,164 @@
 	<meta charset="utf-8">
 	<title>Background</title>
 	<style>
+	    div {color: white;
+	    }
 		#bg {
-			width: 500px;
-			height: 500px;
+			width: 5000px;
+			height: 5000px;
 			background-color: blue;
-			background-image: url("yaakov.png");
-
+			/*background-image: url("Profile image (2).jpg");
+			background-repeat: no-repeat;
+			background-position: bottom right;*/
+			background: url("Profile image (2).jpg") no-repeat right center blue;
 		}
 	</style>
 
 </head>
 <body>
 	<h1>The bg property</h1>
-	<div id="bg">I am a div.</div>
+	<div id="bg">I am a Abeer.</div>
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+</html>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>column</title>
+	<style>
+		div {background-color: #00FFFF;}
+	    p {
+	    	width: 500px;
+	    	height: 500px;
+	    	border: 1px solid black;
+	    	float: left;
+	    	margin-right: 10px;  
+	    }
+	    section {clear: left;}
+		
+		    #p1 {
+			background-color:#A52A2A ;
+			float: right;
+			height: 300px;
+			width: 200px;
+			}
+			#p2 {
+			background-color:#DEB887 ;
+
+			}
+			#p3 {
+			background-color:#5F9EA0 ;
+			clear: left;
+			}
+	</style>
+
+</head>
+<body>
+	<h1>The bg property</h1>
+	<div>
+	<p id="p1">I am a Abeer.</p>
+	<p id="p2">AUST</p>
+	<p id="p3">DRMC</p>
+	<section>Hi!</section>
+	</div>
+	<section>Hello!!!</section>
 </body>
 </html>
 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+</html>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Two column design</title>
+	<style>
+		* {box-sizing: border-box;}
+		div {background-color: #00FFFF;}
+	    p {
+	    	width: 50%;/*better than pixel */
+	    	border: 1px solid black;
+	    	float: left;
+	    	padding: 10px;
+
+	    }
+		
+	    #p1 {
+			background-color:#A52A2A ;
+		}
+	    #p2 {
+			background-color:#DEB887 ;
+		}
+	    section {clear: left;}	
+	</style>
+
+</head>
+<body>
+	<h1>2 COL</h1>
+	<div>
+	<p id="p1">AAAA AAAAAA AAAAA  AA AAAAAAA  AAAAA AAAAA AAAAAAAA AAA AAAAA AAAAAAAA  AAAAAA AAAAA AAAAA AAAAAA AAAAA  AAAA AAAAAAA AAAAA AAAA AAA AAAAAAAA AAAAA AAA AAAAAAAAAAAAA A AAAA  AAAA AA AAAAAAA  A AAAAAAAA AAAA AAAAAAA AAAAA  AAA  AAA</p> 
+	<p id="p2">ZZZ ZZ ZZZZZ ZZZZZ ZZZZZ ZZZZ ZZZZZZZ Z  Z ZZZZZ ZZZZZZ   ZZZZZZZZZ ZZ ZZZZZZ ZZ ZZZ ZZZZZZ ZZZZZZ ZZZZZZZZ ZZZZZZZ  ZZZZZZZ ZZZZ ZZZ ZZ ZZ ZZZZZ  ZZZZ ZZ ZZZZZ ZZZZZ ZZZ ZZZZZ ZZZZZZZ ZZ</p>
+	<section>Hi!</section>
+	</div>
+	<section>Hello!!!</section>
+</body>
+</html>
+
+-->
 
 
 
@@ -1250,6 +1392,571 @@
 
 
 
+
+
+
+
+
+
+<!--
+</html>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Positioning Elements</title>
+	<style>
+		* {
+			box-sizing: border-box;
+	        margin: 0;
+	        padding: 0;	
+		}
+
+		h1 {margin-bottom: 15px;}
+		
+		div#container{
+			background-color: #00FFFF;
+			position: relative;
+			top: 60px;		
+		}
+
+	    p {
+	    	width: 50px;
+	    	height: 50px;
+	    	border: 1px solid black;
+	    	margin-bottom: 15px;  
+	    }
+	    section {clear: left;}
+		
+		    #p1 {
+			background-color:#A52A2A ;
+			position: relative;
+			top: 65px;
+			left: 65px;
+			}
+
+			#p2 {
+			background-color:#DEB887 ;
+
+			}
+			#p3 {
+			background-color:#5F9EA0 ;
+			position: absolute;
+			top: 0;
+			left: 0; 
+			}
+
+			#p4 {
+			background-color:#FF7F50 ;
+		    }
+	</style>
+
+</head>
+<body>
+	<h1>Positioning Elements</h1>
+	<div id="container">
+	<p id="p1">I am a Abeer.</p>
+	<p id="p2">AUST</p>
+	<p id="p3">DRMC</p>
+	<p id="p4">EEE</p>
+	</div>
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+</html>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Media size</title>
+	<style>
+		
+	    p {
+	    	border: 1px solid black;
+	    	margin-bottom: 15px;
+	    	
+	    }
+
+
+	    h1 {
+	    	margin-bottom: 15px;
+	    }
+
+	    #p1 {
+			background-color:#A52A2A ;
+			width: 300px;
+			height: 300px;
+		}
+	    #p2 {
+			background-color:#DEB887 ;
+			width: 50px;
+			height: 50px;
+		}
+
+
+		/*********Large devices*/
+		@media (min-width: 1200px) 
+		{
+			#p1{width: 80%;}
+			#p2{width: 150px;height: 150px;}
+		}
+
+		/*********Medium Devices*/
+		@media (min-width: 992px) and (max-width: 1199px)
+		{
+			#p1{width: 50%;}
+			#p2{width: 100px;height: 100px;}
+		}
+
+	</style>
+
+</head>
+<body>
+	<h1>Media size</h1>
+	<div>
+	<p id="p1">AAAA AAAAAA AAAAA  AA AAAAAAA  AAAAA AAAAA AAAAAAAA AAA AAAAA AAAAAAAA  AAAAAA AAAAA AAAAA AAAAAAAAAAAAA A AAAA  AAAA AA AAAAAAA  A AAAAAAAA AAAA AAAAAAA AAAAA  AAA  AAA</p> 
+	<p id="p2">ZZZ ZZZZZ ZZZ</p>
+	
+	</div>
+
+</body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title>Boostrap Starter Page</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1>Hello !!!!!!!</h1>
+
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title>Boostrap Starter Page (line1)</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4 col-sm-6">Col 1</div>
+		<div class="col-md-4 col-sm-6">Col 2</div>
+		<div class="col-md-4 col-sm-6">Col 3</div>
+		</div>
+	</div>
+
+    <div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4 col-sm-6">Col 1</div>
+		<div class="col-md-4 col-sm-6">Col 2</div>
+		<div class="col-md-4 col-sm-6">Col 3</div>
+		</div>
+	</div>
+
+
+	  <div class="container-fluid">
+		<div class="row">
+		<div class="col-xs-6">Col 1</div>
+		<div class="col-xs-6">Col 2</div>
+		<div class="col-xs-6">Col 3</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title>Responsive Layout</title>
+	<style>
+		/*** Base Styles ***/
+		* {
+			box-sizing: border-box;
+			margin: 15px;
+			padding: 3px;
+
+		}
+		h1 {margin-bottom: 50px;text-align: center;font-size: 75px;font-style: oblique;
+		}
+		p {
+			border: 1px solid black;
+			background-color: green;
+			width: 40%;
+			height: 5%;
+			font-family: Helvetica;
+			color: white;
+			font-style: italic;
+			font-size: 25px;		
+			text-align: center;
+			margin-bottom: 25px;
+			position: relative;
+			left: 55%;
+			top:-30px;
+
+			
+		}
+
+		
+		/*** Common Framework ***/
+		.row {width: 100%;}
+
+		/*** Desktop Response ***/
+		@media (min-width: 992px ) {
+			.col-lg-1,.col-lg-2,.col-lg-3,
+			.col-lg-4,.col-lg-5,.col-lg-6,
+			.col-lg-7,.col-lg-8,.col-lg-9
+		{float: left;border: 1px solid black;background-color: gray;}
+		
+		.col-lg-1 {width: 10%;}
+		.col-lg-2 {width: 20%;}
+		.col-lg-3 {width: 30%;}
+		.col-lg-4 {width: 40%;}
+		.col-lg-5 {width: 50%;}
+		.col-lg-6 {width: 60%;}
+		.col-lg-7 {width: 70%;}
+		.col-lg-8 {width: 80%;}
+		.col-lg-9 {width: 90%;}
+
+		}
+
+
+/*** Tab Response ***/
+@media (min-width: 768px ) and (max-width: 991px)
+        {
+			.col-md-1,.col-md-2,.col-md-3,
+			.col-md-4,.col-md-5,.col-md-6,
+			.col-md-7,.col-md-8,.col-md-9
+		{float: left;border: 1px solid black;background-color: purple;
+		}
+		
+		.col-md-1 {width: 10%;}
+		.col-md-2 {width: 20%;}
+		.col-md-3 {width: 30%;}
+		.col-md-4 {width: 40%;}
+		.col-md-5 {width: 50%;}
+		.col-md-6 {width: 60%;}
+		.col-md-7 {width: 70%;}
+		.col-md-8 {width: 80%;}
+		.col-md-9 {width: 90%;}
+
+		}
+
+    </style>
+</head>
+<body>
+	<h1>Food Menu</h1>
+	<div class="row">
+		<div class="col-lg-3 col-md-6"><p>meat</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>rice</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>grape</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>apple</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>banana</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>mutton</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>chicken</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>Ice-cream</p><section>i ,am description</section></div>
+		<div class="col-lg-3 col-md-6"><p>sweet</p><section>i ,am description</section></div>
+
+
+
+</body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<title>Waterside Dining.</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="row">
+		<div class="col-lg-1 col-md-1 col-sm-1"><p>Chicken</p><section>All chicken feed can be categorized into three main kinds: pellets, crumbles and mash. Each has its own unique benefits; hence it is important to make the use of all three to ensure your chickens are raised healthily and happily.</section></div>
+		<div class="col-lg-1 col-md-2 col-sm-2"><p>Meet</p><section>From cuts of meat like steak or roast, to ground beef dishes like burgers or meatloaf, browse over 5 trusted beef main dish recipes.They are Steak  Spaghetti, Bolognese, Lasagne, Beef burgers, and Chili con carne.
+</section></div>
+		<div class="col-lg-1 col-md-3 col-sm-3"><p>Sushi</p><section>Rice, fish, and nori are the most common sushi ingredients. One of the most noticable features of a sushi restaurant is the counter and the glass cooler filled with the fish and seafood.Order yours  favourite one now !</section></div>
+	</div>
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David Chu's China Bistro</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="pull-left visible-md visible-lg">
+					<div id="logo-img" alt="Logo image"></div>
+			    </a>
+			    <div class="navbar-brand">
+			    	<a href="index.html">
+			    		<h1>David's Bistro</h1>
+			    	</a>
+			    	<p>	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYUD5uUXqltnDF66lXEs25xdreJ9bscM1jA&usqp=CAU" alt="Kosher Certification">
+			    		<span>Kosher Certified</span>
+			    	</p>
+			    </div>
+
+	   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+	</div>
+	       <div id="nav-list">
+
+		
+	       </div>
+
+
+
+	</div>
+		</nav>
+	</header>
+
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
 
 
 
